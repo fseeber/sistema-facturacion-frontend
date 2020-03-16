@@ -3,14 +3,25 @@ html{
   position: relative;
   min-height: 100%;
 }
+<<<<<<< HEAD
 
 body {
   margin-bottom: 60px;
   min-height: 100%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
+=======
+body {
+  margin-bottom: 60px;
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4
 }
 
 .wrap{
   padding-bottom: 60px;
 }
+<<<<<<< HEAD
+=======
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4

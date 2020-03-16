@@ -50,7 +50,10 @@ export class FormComponent implements OnInit {
 
   update(): void {
     console.log(this.cliente);
+<<<<<<< HEAD
     this.cliente.facturas = null;
+=======
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4
     this.clienteService.update(this.cliente)
       .subscribe(
         json => {

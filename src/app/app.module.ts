@@ -10,7 +10,11 @@ import { PaginatorComponent } from './paginator/paginator.component';
 import { ClienteService } from './clientes/cliente.service';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+<<<<<<< HEAD
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+=======
+import { FormsModule } from '@angular/forms';
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4
 
 import { registerLocaleData } from '@angular/common';
 import localeES from '@angular/common/locales/es';
@@ -24,12 +28,15 @@ import { AuthGuard } from './usuarios/guards/auth.guard';
 import { RoleGuard } from './usuarios/guards/role.guard';
 import { TokenInterceptor } from './usuarios/interceptors/token.interceptor';
 import { AuthInterceptor } from './usuarios/interceptors/auth.interceptor';
+<<<<<<< HEAD
 import { DetalleFacturaComponent } from './facturas/detalle-factura.component';
 import { FacturasComponent } from './facturas/facturas.component';
 
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+=======
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4
 
 registerLocaleData(localeES, 'es');
 
@@ -40,9 +47,13 @@ const routes: Routes = [
   { path: 'clientes/page/:page', component: ClientesComponent },
   { path: 'clientes/form', component: FormComponent, canActivate: [AuthGuard, RoleGuard], data: { role: 'ROLE_ADMIN' } },
   { path: 'clientes/form/:id', component: FormComponent, canActivate: [AuthGuard, RoleGuard], data: { role: 'ROLE_ADMIN' } },
+<<<<<<< HEAD
   { path: 'login', component: LoginComponent },
   { path: 'facturas/:id', component: DetalleFacturaComponent, canActivate: [AuthGuard, RoleGuard], data: { role: 'ROLE_USER' } },
   { path: 'facturas/form/:clienteId', component: FacturasComponent, canActivate: [AuthGuard, RoleGuard], data: { role: 'ROLE_ADMIN' } }
+=======
+  { path: 'login', component: LoginComponent }
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4
 ];
 
 @NgModule({
@@ -55,17 +66,25 @@ const routes: Routes = [
     FormComponent,
     PaginatorComponent,
     DetalleComponent,
+<<<<<<< HEAD
     LoginComponent,
     DetalleFacturaComponent,
     FacturasComponent
+=======
+    LoginComponent
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot(routes),
+<<<<<<< HEAD
     BrowserAnimationsModule, MatDatepickerModule, MatMomentDateModule,
     ReactiveFormsModule, MatAutocompleteModule, MatInputModule, MatFormFieldModule
+=======
+    BrowserAnimationsModule, MatDatepickerModule, MatMomentDateModule
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4
   ],
   providers: [ClienteService,
     { provide: LOCALE_ID, useValue: 'es' },

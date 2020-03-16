@@ -7,9 +7,12 @@ import swal from 'sweetalert2';
 import { HttpEventType } from '@angular/common/http';
 import { AuthService } from '../../usuarios/auth.service';
 
+<<<<<<< HEAD
 import { FacturaService } from '../../facturas/services/factura.service';
 import { Factura } from '../../facturas/models/factura';
 
+=======
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4
 @Component({
   selector: 'detalle-cliente',
   templateUrl: './detalle.component.html',
@@ -24,7 +27,10 @@ export class DetalleComponent implements OnInit {
   progreso: number = 0;
 
   constructor(private clienteService: ClienteService,
+<<<<<<< HEAD
     private facturaService: FacturaService,
+=======
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4
     private authService: AuthService,
     private modalService: ModalService) { }
 
@@ -66,6 +72,7 @@ export class DetalleComponent implements OnInit {
     this.progreso = 0;
   }
 
+<<<<<<< HEAD
   delete(factura: Factura): void {
     swal({
       title: 'Está seguro?',
@@ -98,4 +105,6 @@ export class DetalleComponent implements OnInit {
     });
   }
 
+=======
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4
 }

@@ -43,6 +43,7 @@
               <img *ngIf="cliente?.foto" src="http://localhost:8080/api/uploads/img/{{cliente.foto}}" alt="{{cliente.foto}}" class="img-thumbnail rounded">
             </div>
           </div>
+<<<<<<< HEAD
           <div class="row" *ngIf="authService.hasRole('ROLE_ADMIN')">
             <button type="button" class="btn btn-success btn-sm" [routerLink]="['/facturas/form', cliente.id]">crear factura</button>
           </div>
@@ -77,6 +78,8 @@
             </table>
 
           </div>
+=======
+>>>>>>> bda95fbe38ea770ef4dc53ab3aac6dafceba99e4
         </div>
       </div>
       <div class="modal-footer">
